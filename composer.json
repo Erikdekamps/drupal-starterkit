@@ -8,6 +8,23 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type":"vcs",
+            "url": "git@github.com:Erikdekamps/drupal-starterkit-profile.git"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "erikdekamps/drupal_starterkit_profile",
+                "version": "dev-1.0.x",
+                "type": "drupal-custom-profile",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Erikdekamps/drupal-starterkit-profile.git",
+                    "reference": "1.0.x"
+                }
+            }
         }
     ],
     "require": {
@@ -19,7 +36,8 @@
         "drush/drush": "^11.4.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
-        "drupal/core-project-message": "^10.1"
+        "drupal/core-project-message": "^10.1",
+        "erikdekamps/drupal_starterkit_profile": "@dev"
     },
     "require-dev": {
         "drupal/core-dev": "^10.0.0"

@@ -6,6 +6,7 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
+/web/profiles/custom/drupal_starterkit_profile
 /web/libraries/
 /web/private/scripts/quicksilver
 /web/private/examples

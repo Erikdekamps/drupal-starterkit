@@ -6,7 +6,7 @@ tasks:
   - init: |
       ddev start -y
       ddev composer install
-      ddev drush si -y --site-name='Drupal Starterkit' standard --locale=nl
+      ddev drush si -y --site-name='Drupal Starterkit' drupal_starterkit_profile --locale=nl
       ddev drush uli
     command: |
       ddev start -y
