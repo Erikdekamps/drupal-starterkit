@@ -1,0 +1,80 @@
+{
+  "name": "drupal-starterkit",
+  "version": "0.0.1",
+  "description": "Drupal starterkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "release": "release-it",
+    "changelog": "release-it --changelog"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+github.com:Erikdekamps/drupal-starterkit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "husky": "^8.0.0",
+    "release-it": "^15.10.3"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "chore",
+              "hidden": true
+            },
+            {
+              "type": "docs",
+              "hidden": true
+            },
+            {
+              "type": "style",
+              "hidden": true
+            },
+            {
+              "type": "refactor",
+              "hidden": true
+            },
+            {
+              "type": "perf",
+              "hidden": true
+            },
+            {
+              "type": "test",
+              "hidden": true
+            }
+          ],
+          "commitUrlFormat": "https://github.com/erikdekamps/drupal-starterkit/commits/{{hash}}",
+          "compareUrlFormat": "https://github.com/erikdekamps/drupal-starterkit/compare/{{previousTag}}...{{currentTag}}"
+        }
+      }
+    }
+  }
+}

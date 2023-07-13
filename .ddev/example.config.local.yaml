@@ -1,0 +1,20 @@
+# Many ddev commands can be extended to run tasks before or after the
+# ddev command is executed, for example "post-start", "post-import-db",
+# "pre-composer", "post-composer"
+# See https://ddev.readthedocs.io/en/stable/users/extend/custom-commands/ for more
+# information on the commands that can be extended and the tasks you can define
+# for them. Example:
+# hooks:
+#   post-start:
+#     - composer: install
+#   post-composer:
+#     - exec: drush cr
+#     - exec: drush cim -y
+#     - exec: drush updb -y
+#     - exec: drush cr
+#     - exec: drush uli
+#     - exec-host: ddev launch /user
+#   post-import-db:
+#     - exec: drush cim -y
+#     - exec: drush cr
+#     - exec: drush uli
