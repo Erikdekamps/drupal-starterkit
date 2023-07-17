@@ -2209,12 +2209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Erikdekamps/drupal-starterkit-profile.git",
-                "reference": "349d16243a38a0c074db99995cbc0eda762a17b9"
+                "reference": "9f586a1f560c7f0629f6f74df874ef48264c1ee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Erikdekamps/drupal-starterkit-profile/zipball/349d16243a38a0c074db99995cbc0eda762a17b9",
-                "reference": "349d16243a38a0c074db99995cbc0eda762a17b9",
+                "url": "https://api.github.com/repos/Erikdekamps/drupal-starterkit-profile/zipball/9f586a1f560c7f0629f6f74df874ef48264c1ee7",
+                "reference": "9f586a1f560c7f0629f6f74df874ef48264c1ee7",
                 "shasum": ""
             },
             "require": {
@@ -2232,7 +2232,7 @@
                 "source": "https://github.com/Erikdekamps/drupal-starterkit-profile/tree/main",
                 "issues": "https://github.com/Erikdekamps/drupal-starterkit-profile/issues"
             },
-            "time": "2023-07-17T08:15:26+00:00"
+            "time": "2023-07-17T11:33:22+00:00"
         },
         {
             "name": "graham-campbell/result-type",
