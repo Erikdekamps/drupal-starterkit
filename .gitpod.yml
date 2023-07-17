@@ -5,43 +5,10 @@ image: drupalpod/drupalpod-gitpod-base:20221021
 tasks:
   - init: |
       ddev start -y
-      ddev composer install
-      ddev drush si -y --site-name='Drupal Starterkit' drupal_starterkit_profile --locale=nl
-      ddev drush uli
+      ddev drupal-install
     command: |
       ddev start -y
       gp ports await 8080 && gp preview $(gp url 8080)
-
-# VScode xdebug extension
-vscode:
-  extensions:
-    # PHP extensions.
-    - felixfbecker.php-debug
-    - wongjn.php-sniffer
-    - neilbrayfield.php-docblocker
-    - bmewburn.vscode-intelephense-client
-    - andrewdavidblum.drupal-smart-snippets
-
-    # Twig extensions.
-    - mblode.twig-language-2
-
-    # Bash extensions.
-    - timonwong.shellcheck
-    - rogalmic.bash-debug
-
-    # Other stuff.
-    - vivaxy.vscode-conventional-commits
-    - usernamehw.remove-empty-lines
-    - esbenp.prettier-vscode
-    - github.github-vscode-theme
-    - shd101wyy.markdown-preview-enhanced
-    - xdebug.php-debug
-    - mehedidracula.php-namespace-resolver
-    - oderwat.indent-rainbow
-    - dbaeumer.vscode-eslint
-    - yzhang.markdown-all-in-one
-    - ikappas.phpcs
-    - formulahendry.auto-rename-tag
 
 ports:
   # Used by ddev - local db clients
